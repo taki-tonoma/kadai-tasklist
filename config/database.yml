@@ -49,7 +49,10 @@ test:
 # for a full overview on how database connection configuration can be specified.
 #
 production:
-  <<: *default
-  database: kadai_tasklist_production
+#  <<: *default
+#  database: kadai_tasklist_production
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
   username: kadai_tasklist
   password: <%= ENV['KADAI_TASKLIST_DATABASE_PASSWORD'] %>
