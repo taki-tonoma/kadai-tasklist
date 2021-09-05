@@ -1,24 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>KadaiTasklist</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Tasklist</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-    
   </head>
 
   <body>
-    <%= render 'layouts/navbar' %>
     <div class="container">
       <%= render 'layouts/flash_messages' %>
-
       <%= yield %>
     </div>
   </body>
